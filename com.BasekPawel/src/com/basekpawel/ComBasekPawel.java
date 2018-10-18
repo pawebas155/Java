@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 package com.basekpawel;
-
+import com.basekpawel.controller.Controller;
 /**
  *
- * @author pawel
+ * @author Student
  */
 public class ComBasekPawel {
 
@@ -15,7 +15,9 @@ public class ComBasekPawel {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("hello world");
+        Controller controller = new Controller();
+        controller.mainPrograme();
+        // TODO code application logic here
     }
     
 }
