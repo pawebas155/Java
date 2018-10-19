@@ -7,7 +7,7 @@ package com.basekpawel;
 import com.basekpawel.controller.Controller;
 /**
  *
- * @author Student
+ * @author Paweł Basek
  */
 public class ComBasekPawel {
 
@@ -17,7 +17,6 @@ public class ComBasekPawel {
     public static void main(String[] args) {
         Controller controller = new Controller();
         controller.mainPrograme();
-        // TODO code application logic here
     }
     
 }

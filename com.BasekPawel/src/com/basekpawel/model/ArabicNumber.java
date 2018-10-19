@@ -7,8 +7,8 @@ package com.basekpawel.model;
 
 /**
  *
- * @author Paweł Basek
+ * @author pawel
  */
-public class Model {
+public class ArabicNumber {
     
 }
