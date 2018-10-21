@@ -27,7 +27,7 @@ public class Controller {
     
     /**
      * Constructor gets arguments and creates objects.
-     * @param arg 
+     * @param arg set table of programe paramters
      */
     public Controller(String[] arg){
         arguments = arg;

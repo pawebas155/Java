@@ -42,8 +42,8 @@ public class Converter implements IConverter {
     
     /**
      * Convert the Roman number to the Arabic number
-     * @param romanNb
-     * @return the Arabic number
+     * @param romanNb it is the Roman number which will be convert to the Arabic number
+     * @return return the Arabic number
      */
     public ArabicNumber convertion(RomanNumber romanNb){
         

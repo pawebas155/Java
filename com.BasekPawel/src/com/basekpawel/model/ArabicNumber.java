@@ -23,8 +23,7 @@ public class ArabicNumber implements IArabicNumber{
     private int arabicNumber;
     
     /**
-     * set the Arabic number
-     * @param nb 
+     * @param nb set the Arabic number
      */
     public void set(int nb){
         arabicNumber = nb;
@@ -32,7 +31,7 @@ public class ArabicNumber implements IArabicNumber{
     
     /**
      * 
-     * @return the Arabic number
+     * @return return the Arabic number
      */
     public int get(){
         return arabicNumber;

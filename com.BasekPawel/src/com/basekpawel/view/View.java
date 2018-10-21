@@ -40,7 +40,7 @@ public class View implements IView {
     
     /**
      * Show on screen arabic number after convertion.
-     * @param arabicNb 
+     * @param arabicNb Integer with Arabic number after conversion
      */
     public void ShowArabicNumber(int arabicNb){
         System.out.println("Roman Number after convertion: " + arabicNb);

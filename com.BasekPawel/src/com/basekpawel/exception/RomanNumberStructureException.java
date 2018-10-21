@@ -15,7 +15,8 @@ public class RomanNumberStructureException extends Exception{
     
     /**
      * 
-     * @return message about the error     */
+     * @return message about the error     
+     */
     public String toString(){
         return "There is a Bad Structure of Roman Number.";
     }

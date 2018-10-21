@@ -34,8 +34,7 @@ public class RomanNumber implements IRomanNumber{
     }
     
     /**
-     * set the Roman number
-     * @param rNb 
+     * @param rNb set the Roman number
      */
     public void set(String rNb){
         number = rNb;
@@ -44,8 +43,8 @@ public class RomanNumber implements IRomanNumber{
     /**
      * 
      * @return true if the Roman number is correct
-     * @throws RomanNumberStructureException
-     * @throws EmptyStringException 
+     * @throws RomanNumberStructureException throw exception if the structure of the Roman number is uncorrect
+     * @throws EmptyStringException throw exception if there is empty string (no roman number)
      */
     public boolean isCorrect() throws RomanNumberStructureException, EmptyStringException{
 
