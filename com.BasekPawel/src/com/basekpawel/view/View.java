@@ -8,24 +8,41 @@ import java.util.Scanner;
 
 /**
  *
- * @author Student
+ * @author Paweł Basek
+ * @version 0.1
+ * @since 0.1
  */
 interface IView {
-    public int Menu();
+    public String GetRomanNumber();
+    public void TooMuchParameters();
+    public void ShowArabicNumber(int arabicNb);
 }
 
 public class View implements IView {
-    
-    public int Menu(){
-        System.out.println("***Welcome to the converter of Roman numbers to Arabic***");
-        System.out.println("Select action");
-        System.out.println("1. Convert number");
-        System.out.println("2. Exit");
-        
+    /**
+     * This method get roman number form user.
+     * @return roman number from user.
+     */
+    public String GetRomanNumber(){
+        System.out.print("Give a Roman Number: ");
         Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
-                
-        return choice;
+        String userNumber = scanner.next();
+        
+        return userNumber;
     }
     
+    /**
+     * Show a notification, that user entered too much parameters.
+     */
+    public void TooMuchParameters(){
+        System.out.println("There are too much parameters.");
+    }
+    
+    /**
+     * Show on screen arabic number after convertion.
+     * @param arabicNb 
+     */
+    public void ShowArabicNumber(int arabicNb){
+        System.out.println("Roman Number after convertion: " + arabicNb);
+    }
 }

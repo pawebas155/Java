@@ -7,7 +7,9 @@ package com.basekpawel.model;
 
 /**
  *
- * @author pawel
+ * @author Paweł Basek
+ * @version 0.1
+ * @since 0.1
  */
 interface IArabicNumber{
     public void set(int ab);
@@ -15,12 +17,23 @@ interface IArabicNumber{
 }
 
 public class ArabicNumber implements IArabicNumber{
+    /**
+     * it store the Arabic number
+     */
     private int arabicNumber;
     
+    /**
+     * set the Arabic number
+     * @param nb 
+     */
     public void set(int nb){
         arabicNumber = nb;
     }
     
+    /**
+     * 
+     * @return the Arabic number
+     */
     public int get(){
         return arabicNumber;
     }

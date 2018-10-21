@@ -11,12 +11,13 @@ package com.basekpawel.exception;
  * @version 0.1
  * @since 0.1
  */
-public class RomanNumberStructureException extends Exception{
+public class EmptyStringException extends Exception{
     
     /**
      * 
-     * @return message about the error     */
+     * @return message about the error
+     */
     public String toString(){
-        return "There is a Bad Structure of Roman Number.";
+        return "There is empty string.";
     }
 }
