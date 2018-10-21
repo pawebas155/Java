@@ -5,50 +5,33 @@
  */
 package com.basekpawel.model;
 import java.util.regex.*;
+import com.basekpawel.exception.RomanNumberStructureException;
+
 /**
  *
  * @author pawel
  */
-public class RomanNumber {
+
+interface IRomanNumber {
+    public boolean isCorrect() throws RomanNumberStructureException;
+}
+
+public class RomanNumber implements IRomanNumber{
     private String number;
     
-    public void setNumber(String nb){
+    public RomanNumber(String nb){
         number = nb;
     }
-    /** return true if number consist only letter which are used in Roman Numbers */
-    public boolean areGoodLetters(){
-        Pattern p = Pattern.compile("[IVXLCDM]+");
-        Matcher m = p.matcher(number);
-        boolean b = m.matches();
-        
-        return b;
-    }
-    
-    /** return true if number have at least 3 same letter in row */
-    public boolean haveAtLeastThreeSameLetters(){
-        int count = 1;
-        char tempSign = ' ';
-        for(int i = 0; i < number.length(); i++){
-            
-            if(tempSign != number.charAt(i)){
-                tempSign = number.charAt(i);
-                count = 1;
-            }
-            else{
-                count++;
-            }
-            
-            if(count >= 3){
-                return false;
-            }
-            
-            tempSign = number.charAt(i);
-        }
-        return true;
-    }
-    
+      
     /** return true if number is correct */
-    public boolean isCorrect(){
-        return false;
+    public boolean isCorrect() throws RomanNumberStructureException{
+
+        Pattern p = Pattern.compile("M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})");
+        Matcher m = p.matcher(number);
+        
+        if(m.matches() == false)
+            throw new RomanNumberStructureException();
+        
+        return true;
     }
 }

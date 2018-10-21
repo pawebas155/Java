@@ -10,5 +10,12 @@ package com.basekpawel.model;
  * @author pawel
  */
 public class Converter {
+//    final int M = 1000;
+//    final int D = 500;
+//    final int C = 100;
+//    final int L = 50;
+//    final int X = 10;
+//    final int V = 5;
+//    final int I = 1;
     
 }

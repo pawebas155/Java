@@ -9,6 +9,19 @@ package com.basekpawel.model;
  *
  * @author pawel
  */
-public class ArabicNumber {
+interface IArabicNumber{
+    public void set(int ab);
+    public int get();
+}
+
+public class ArabicNumber implements IArabicNumber{
+    private int arabicNumber;
     
+    public void set(int nb){
+        arabicNumber = nb;
+    }
+    
+    public int get(){
+        return arabicNumber;
+    }
 }
